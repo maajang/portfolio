@@ -1,0 +1,153 @@
+ .about-wrapper{
+     margin-top: 40px;
+     background-color: $background-color;
+ }
+
+ .about-wrapper{
+    background-color: $background-color;
+    overflow: hidden;
+    width: 80%;
+    // height: 50%;
+    margin-left: 20%;
+    margin-right: 0;
+    padding: 20px;
+   
+  h2{
+      font-size: 2.5rem;
+      color: white;
+      font-family: $heading-font1;
+  }
+
+  p{
+      font-size: 1.3rem;
+      color: white;
+      width: 100%;
+      line-height: 28px;
+      text-align: justify;
+  }
+
+  img{
+      width: 30%;
+      float: none;
+      float: left;
+      top: 0;
+      border-radius: 50%;
+      padding: 10px;
+    //   border: 1px solid white;
+
+  }
+}
+ 
+ @media only screen and (min-width: $mobile-size){
+    .about-wrapper{
+        background-color: $background-color;
+        overflow: hidden;
+        width: 80%;
+        height: 50%;
+        margin-left: 20%;
+        margin-right: 0;
+        float: none;
+        padding: 20px;
+      h2{
+          font-size: 2.5rem;
+          color: white;
+          font-family: $heading-font1;
+      }
+    
+      p{
+          font-size: 1.3rem;
+          color: white;
+          width: 100%;
+          line-height: 28px;
+      }
+    
+      img{
+          width: 100%;
+          float: none;
+          float: left;
+          top: 0;
+          border-radius: 50%;
+
+      }
+    }
+
+}
+@media only screen and (min-width: $tablet-size){
+    .about-wrapper{
+        background-color: $background-color;
+        overflow: hidden;
+        width: 80%;
+        height: 50%;
+        padding: 20px;
+        margin-top: 45px;
+        margin-left: 20%;
+        margin-right: 0;
+
+        img{
+            float: left;
+           
+            top: 0;
+            border-radius: 50%;
+            width: 100%;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 2.5rem;
+            color: white;
+            font-family: $heading-font1;
+            
+        }
+        
+        p{
+            line-height: 28px;
+            font-size: 1.5rem;
+            font-family: $paragraph-font;
+            width: 100%;
+            color: white;
+         
+        }
+        
+    }
+
+}
+
+@media only screen and (min-width: $desktop-size){
+    
+    .about-wrapper{
+       background-color: $background-color;
+    
+        overflow-x: hidden;
+        width: 80%;
+        height: 50%;
+        margin-left: 20%;
+        margin-right: 0;
+
+
+        img{
+            float: left;
+           
+            top: 0;
+            border-radius: 50%;
+
+            padding: 20px;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 4.5rem;
+            color: white;
+            font-family: $heading-font1;
+            
+        }
+        
+        p{
+            line-height: 28px;
+            font-size: 1.7rem;
+            font-family: $paragraph-font;
+            color: white; 
+        }
+        
+    }
+
+}

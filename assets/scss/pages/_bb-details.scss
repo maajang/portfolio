@@ -1,0 +1,300 @@
+
+h3 {    
+    p{
+        box-shadow: 0 0 5px 5px  #c45d5d;
+        border: 1px solid black;
+        font-size: 26px;
+        padding: 20px;
+        width: 100%;
+        font-family: $heading-font1;
+    }
+}
+
+// next previous buttons
+.next-prev-page{
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 16px;
+    margin: 20px;
+    font-size: 16px;
+  }
+  
+  a:hover {
+    background-color: #4cd137;
+    color: white;
+  }
+  
+  .previous {
+    background-color: #4cd137;
+    color: black;
+  }
+  
+  .next {
+    background-color: #4cd137;
+    color: black;
+  }
+
+
+} // End of next-prev-page
+
+//  main body
+main{
+    // Button for view website styling
+   .button{
+    width: 300px;
+    height:50px;
+    border: 1px solid #34495e;
+    float:left;
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+    box-sizing:border-box;
+    overflow:hidden;
+    // background-color: $color-theme;
+  }
+  .button a{
+    font-family: $background-color;
+    font-size:  26px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
+    transition: all .4s ease;
+    z-index: 20;
+    position: relative;
+  }
+  .eff{
+    width: 300px;
+    height:50px;
+    bottom:-50px;
+    background-color: $paragraph-color;
+    position:absolute;
+    transition:all .4s ease;
+    z-index:1;
+  }
+  .button:hover .eff{
+    bottom:0;
+  }
+  .button:hover a{
+    color: #ffdd59;
+  }
+
+  .more-info{
+      font-family: $paragraph-font;
+      padding-top: 20px;
+
+      p{
+          text-align: left;
+      }
+
+      h5{
+       font-size: 1.5rem;
+      }
+  }
+
+}
+
+.project-details{
+   background-color: rgb(224, 213, 146);;
+   position: absolute;
+   overflow: hidden;
+   margin-top: 100px;
+   padding: 30px;
+   left: 20px;
+   right: 20px;
+   h2{
+       text-align: center;
+       font-size: 2.2rem;
+       color: $paragraph-color;
+       font-family: $heading-font1;
+       padding-top: 20px;
+   }
+
+   h3{
+       font-weight: bold;
+       font-size: 10px;
+       color: $paragraph-color;
+   }
+
+   p{
+       font-size: 1.7rem;
+       line-height: 2.4rem;
+       font-family: $paragraph-font;
+       color: black;
+   }
+
+   .images{
+
+     .flex-images{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 10px;
+
+         img, video{
+            flex: 1;
+            border: 1px solid black;
+
+         }
+
+         video {
+             max-width: 100%;
+             height: auto;
+         }
+     }
+   }
+
+.wireframes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    img{
+        width: 100%;
+    }
+}
+
+   .demo{
+       margin-bottom: 20px;
+   }
+
+   .tools{
+       display: flex;
+       justify-content: first baseline;
+   }
+
+  
+}
+
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 50px; 
+    right: 100px; 
+    z-index: 99; 
+    color: #333;
+    padding: 8px; 
+    font-size: 12px;
+    font-family: "Roboto Mono", monospace;
+    background: #FFF;
+	border: 1px solid #333;
+	border-radius: 5px;
+    text-transform: lowercase;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #myBtn {
+    font-size: 12px;
+    bottom: 10px;
+    right: 10px;
+    background: #FFF;
+    color: #000;
+  }
+}
+
+  @media only screen and (min-width: $tablet-size){
+    .details-container{
+        background-color: #ffeaef;
+        // width: 100%;
+
+
+         .project-link{
+            position: fixed;
+            margin-top: 10px;
+            background-color: #ffeaef;
+           
+           .page-title{
+             h2{
+               text-align: center;
+               font-size: 2.5rem;
+               color: $paragraph-color;
+               font-family: $heading-font1;  
+               padding: 10px;
+
+             }
+           }
+
+           .img-container{
+            padding: 10px;
+
+               img{
+                   width: 100%;
+                   height: auto;
+                   border: 1px solid black;
+               }
+           }
+    }
+}
+
+    .project-details{
+        width: auto;
+        margin-left: 350px;
+        margin-right: 0;
+        position: relative;
+        overflow: auto;
+        padding-top: 30px;
+        padding-left: 30px;
+        margin-top: -450px;
+        margin-right: 0;
+      
+        h2{
+            text-align: center;
+            font-size: 2.5rem;
+            color: $paragraph-color;
+            font-family: $heading-font1;
+            padding-top: 20px;
+        }
+
+        h3{
+            font-weight: bold;
+            font-size: 16px;
+            color: $paragraph-color;
+        }
+
+        p{
+            font-size: 1.7rem;
+            line-height: 2.5rem;
+            font-family: $paragraph-font;
+            color: black;
+        }
+
+        .images{
+    
+          .flex-images{
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 10px;
+
+              img, video{
+                 flex: 1;
+                 border: 1px solid black;
+
+              }
+
+              video {
+                max-width: 100%;
+                height: auto;
+            }
+          }
+        }
+
+        .wireframes{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5px;
+
+              img{
+                  width: 100%;
+              }
+        }
+
+        .demo{
+            margin-bottom: 30px;
+        }
+
+
+
+    }
+    
+}

@@ -1,0 +1,21 @@
+.logo {
+    height: 6rem;
+    width: 8rem;
+    a:hover{
+      background-color: goldenrod;
+      height: 6rem;
+      width:  8rem;
+    }
+  }
+
+  @media only screen and (min-width: $mobile-size){
+
+    .logo{
+      width: 8rem;
+      height: 6rem;
+    }
+
+  }
+
+ 
+

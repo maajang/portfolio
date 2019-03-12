@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129715943-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129715943-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+    <link rel="icon" type="image/png" href="/favicon-16x16.png">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Lobster+Two|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="./build/css/style.css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/php_files/style.css">
+</head>
+<nav>
+    <div class="logo">
+        <div class="innerCircle"></div>
+        <a href="home.html" class="selected">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+    </div>
+    <ul class="mobile-nav">
+        <!-- <li><a href="home.html"></a></li> -->
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html" class="selected">Contact</a></li>
+    </ul>
+    <input type="checkbox" id="menuCheck">
+    <label class="menu" for="menuCheck">
+        <span class="dot"></span>
+    </label>
+</nav>
+    <!-- body -->
+    <div class="smallcircles">
+            <div class="right">
+                    <a href="#0">
+                            <div class="world">
+                                <i class="fab fa-html5"></i>
+                            </div> 
+                    </a>
+            </div> 
+            <div class="right">
+                    <a href="#0">
+                            <div class="world">
+                                <i class="fab fa-css3"></i>
+                            </div> 
+                    </a>
+            </div> 
+            <div class="right">
+                    <a href="#0">
+                            <div class="world">
+                                <i class="fab fa-sass"></i>
+                            </div> 
+                    </a>
+            </div> 
+            <div class="right">
+                    <a href="#0">
+                            <div class="world">
+                                <i class="fab fa-js-square"></i>
+                            </div> 
+                    </a>
+            </div> 
+            <div class="right">
+                    <a href="#0">
+                            <div class="world">
+                                <i class="fab fa-php"></i>
+                            </div> 
+                    </a>
+            </div> 
+            <div class="right">
+                    <a href="#0">
+                            <div class="world">
+                                <i class="fab fa-java"></i>
+                            </div> 
+                    </a>
+            </div> 
+            <!-- <div class="world">
+                <i class="fab fa-java" id=image></i>
+            </div> 
+            -->
+ </div>
+<main>
+    <div class="contact-container">
+        <div class="page-title">
+            <h2>Say Hello</h2>
+            <hr>
+        </div>
+        <div class="content">
+            <div class="col">
+                <form action="/assets/php_files/processor.php" method="POST" class="contact-form">
+
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                    <br>
+
+                    <input id="email" type="text" name="email" value="" placeholder="Email">
+                    <br>
+
+                    <input id="name" type="text" name="name" value="" placeholder="Name">
+                    <br>
+                    <input type="submit" value="Send" name="submit">
+
+                </form>
+                <h4>Connect on Social</h4>
+                <div class="social-media">
+                    <a href="https://github.com/maajang"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ajang-bul-b8161b170/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/ajangbul"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+              
+            <div class="col">
+                <h4>Or Directly Call or Email Me</h4>
+                <div class="first-item">
+                    <a href=""><i class="fas fa-mobile-alt"></i></a>
+                    <p>+1 (604)-561-2316</p>
+                </div> 
+                <div class="second-item">
+                    <a href="mailto:ajangbul@outlook.com">
+                        <i class="fas fa-envelope-square"></i></a>
+                    <a href="mailto:ajangbul@outlook.com">
+                        <p>Email me</p>
+                    </a>
+                </div>
+
+                <div class="third-item">
+                    <a href="#0">
+                        <i class="fas fa-map-marker-alt"></i> </a>
+                    <p>Vancouver, BC.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="right-bar">
+            <a href="https://github.com/maajang"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ajang-bul-b8161b170/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/ajangbul"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</main>
+
+</html>
